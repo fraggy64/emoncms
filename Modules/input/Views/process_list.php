@@ -187,7 +187,7 @@ function process_add() {
   }
 
   $.ajax({
-    url: path+"input/process/add.json"+datastring,
+    url: path+"input/process/add_json"+datastring,
     dataType: 'json',
     async: false,
     success: function(data)

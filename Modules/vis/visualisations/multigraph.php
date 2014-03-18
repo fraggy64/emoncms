@@ -35,10 +35,10 @@
   var mid = <?php echo $mid; ?>;
   var path = "<?php echo $path; ?>";
   var embed = <?php echo $embed; ?>;
-  var apikey = "<?php echo $apikey; ?>";
+  var apikey = "b1a711a3f830a3b9533895fa8ffa756f";
   var multigraph_feedlist = {};
 
-  $.ajax({ url: path+"vis/multigraph/get.json", data: "&id="+mid, dataType: 'json', async: true,
+  $.ajax({ url: path+"vis/multigraph/get_json", data: "&id="+mid, dataType: 'json', async: true,
     success: function(data)
     {
         multigraph_feedlist = data;

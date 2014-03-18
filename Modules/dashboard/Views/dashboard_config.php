@@ -77,7 +77,7 @@
 		if ($("#chk_showdescription").is(":checked")) fields['showdescription'] = true; else fields['showdescription'] = false;
 
     $.ajax({
-      url :  path+"dashboard/set.json",
+      url :  path+"dashboard/set_json",
       data : "&id="+dashid+"&fields="+JSON.stringify(fields),
       dataType : 'json',
       success : function(result) {console.log(result)}

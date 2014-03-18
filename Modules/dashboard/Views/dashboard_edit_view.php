@@ -98,7 +98,7 @@ if (!$dashboard['height']) $dashboard['height'] = 400;
     designer.scan(); 
     $.ajax({
       type: "POST",
-      url :  path+"dashboard/setcontent.json",
+      url :  path+"dashboard/setcontent_json",
       data : "&id="+dashid+'&content='+encodeURIComponent($("#page").html())+'&height='+designer.page_height,
       dataType: 'json',
       success : function(data) { console.log(data); if (data.success==true) $("#save-dashboard").attr('class','btn btn-success').text('<?php echo _("Saved") ?>');

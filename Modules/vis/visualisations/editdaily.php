@@ -113,7 +113,7 @@
     var newvalue = $("#newvalue").val();
     
     $.ajax({                                      
-      url: path+'feed/update.json',                         
+      url: path+'feed/update_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&time="+time+"&value="+newvalue,
       dataType: 'json',
       async: false,                      
@@ -126,7 +126,7 @@
     var time = $("#time").val();
     
     $.ajax({                                      
-      url: path+'feed/update.json',                         
+      url: path+'feed/update_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&time="+time+"&delete=1",
       dataType: 'json',
       async: false,                      

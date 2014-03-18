@@ -7,7 +7,7 @@
     var list = [];
     $.ajax({                                      
       type: "GET",
-      url: path+"feed/list.json?apikey="+apikey,           
+      url: path+"feed/list_json?apikey="+apikey,           
       dataType: 'json',
       async: false,
       success: function(data) { list = data; }
@@ -25,7 +25,7 @@
     if (apikey!="") query+= "&apikey="+apikey;
 
     $.ajax({                                    
-      url: path+'feed/data.json',                         
+      url: path+'feed/data_json',                         
       data: query,  
       dataType: 'json',                           
       async: false,
@@ -44,7 +44,7 @@
     if (apikey!="") query+= "&apikey="+apikey;
 
     $.ajax({                                    
-      url: path+'feed/data.json',                         
+      url: path+'feed/data_json',                         
       data: query,  
       dataType: 'json',                           
       success: function(datain) { 
@@ -62,7 +62,7 @@
   {
     var feedIn = [];
     $.ajax({                                    
-      url: path+'feed/histogram.json',                         
+      url: path+'feed/histogram_json',                         
       data: "&apikey="+apikey+"&id="+feedID+"&start="+start+"&end="+end,  
       dataType: 'json',                           
       async: false,
@@ -78,7 +78,7 @@
   {
     var feedIn = [];
     $.ajax({                                      
-      url: path+'feed/kwhatpower.json',                         
+      url: path+'feed/kwhatpower_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&min="+rmin+"&max="+rmax,
       dataType: 'json',
       async: false,                      
@@ -92,7 +92,7 @@
   //-------------------------------------------------------------------------------
   function get_multigraph(apikey)
   {
-    var query = path+"vis/multigraphget.json";
+    var query = path+"vis/multigraphget_json";
     if (apikey!="") query+= "?apikey="+apikey;
     console.log(query);
     var feedlist = [];
@@ -116,7 +116,7 @@
 
     $.ajax({                                      
       type: "POST",
-      url: path+"vis/multigraphsave.json?apikey="+write_apikey,        
+      url: path+"vis/multigraphsave_json?apikey="+write_apikey,        
       data: "&data="+JSON.stringify(feedlist_save),
       success: function(msg) {console.log(msg);}
     });

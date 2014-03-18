@@ -57,7 +57,7 @@ function show_dashboard()
 // update function
 function update()
 {
-  var query = path + "feed/list.json?userid="+userid;
+  var query = path + "feed/list_json?userid="+userid;
   $.ajax(
   {
     url : query,

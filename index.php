@@ -21,8 +21,12 @@
   require "core.php";
   require "route.php";
   require "locale.php";
+  require_once('Lib/FirePHPCore/FirePHP.class.php');
   
-  $path = get_application_path();
+  $firephp = FirePHP::getInstance(true);
+  
+  // $path = get_application_path();
+  $path = "http://cesaam.fr/emoncms/";
 
   // 2) Database
   $mysqli = @new mysqli($server,$username,$password,$database);
@@ -58,6 +62,8 @@
   // 5) Get route and load controller
   $route = new Route(get('q'));
 
+  $firephp->log($route);
+  
   if (get('embed')==1) $embed = 1; else $embed = 0;
 
   // If no route specified use defaults 

@@ -21,7 +21,7 @@ function plotChart(container, id, month) {
 	// 1) GET ALL KWHD DATA
 	//--------------------------------------------------------------
 	$.ajax({ 
-		url: path+"feed/data.json",
+		url: path+"feed/data_json",
 		data: "&apikey=" + apikey + "&id=" + kwhd + "&start=" + (startDate.getTime() - 100)  +"&end=" + endDate.getTime() + "&dp=30", // - 100 is to get the day before the first
 		dataType: 'json',        
 		success: function(data_in)

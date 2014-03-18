@@ -75,7 +75,7 @@ http://openenergymonitor.org/emon/node/600
 		function vis_feed_data(apikey,feedid,start,end,line,oldref)
 		{
 		    $.ajax({                                      
-			url: path+'feed/data.json',                         
+			url: path+'feed/data_json',                         
 			data: "&apikey="+apikey+"&id="+feedid+"&start="+start+"&end="+end+"&dp=0",
 			dataType: 'json',                           
 			success: function(data) 

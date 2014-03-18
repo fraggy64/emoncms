@@ -4,20 +4,20 @@ var feed = {
   'list':function()
   {
     var result = {};
-    $.ajax({ url: path+"feed/list.json", dataType: 'json', async: false, success: function(data) {result = data;} });
+    $.ajax({ url: path+"feed/list_json", dataType: 'json', async: false, success: function(data) {result = data;} });
     return result;
   },
 
   'set':function(id, fields)
   {
     var result = {};
-    $.ajax({ url: path+"feed/set.json", data: "id="+id+"&fields="+JSON.stringify(fields), async: false, success: function(data){} });
+    $.ajax({ url: path+"feed/set_json", data: "id="+id+"&fields="+JSON.stringify(fields), async: false, success: function(data){} });
     return result;
   },
 
   'remove':function(id)
   {
-    $.ajax({ url: path+"feed/delete.json", data: "id="+id, async: false, success: function(data){} });
+    $.ajax({ url: path+"feed/delete_json", data: "id="+id, async: false, success: function(data){} });
   },
 
 
@@ -26,7 +26,7 @@ var feed = {
   {
     var feedIn = [];
     $.ajax({                                      
-      url: path+'feed/data.json',                         
+      url: path+'feed/data_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&start="+start+"&end="+end+"&dp="+dp,
       dataType: 'json',
       async: false,                      
@@ -39,7 +39,7 @@ var feed = {
   {
     var feedIn = [];
     $.ajax({                                      
-      url: path+'feed/timestoreaverage.json',                         
+      url: path+'feed/timestoreaverage_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&start="+start+"&end="+end+"&interval="+interval,
       dataType: 'json',
       async: false,                      
@@ -52,7 +52,7 @@ var feed = {
   {
     var feedIn = [];
     $.ajax({                                      
-      url: path+'feed/kwhatpowers.json',                         
+      url: path+'feed/kwhatpowers_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&points="+JSON.stringify(points),
       dataType: 'json',
       async: false,                      
@@ -65,7 +65,7 @@ var feed = {
   {
     var feedIn = [];
     $.ajax({                                      
-      url: path+'feed/histogram.json',                         
+      url: path+'feed/histogram_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&start="+start+"&end="+end+"&res=1",
       dataType: 'json',
       async: false,                      

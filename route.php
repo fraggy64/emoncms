@@ -56,14 +56,14 @@ class Route
         $q = trim($q, '/');
 	
         // filter out all except a-z and / .
-        $q = preg_replace('/[^.\/A-Za-z0-9-]/', '', $q);
+        $q = preg_replace('/[^.\/_A-Za-z0-9-]/', '', $q);
 
         // Split by /
         $args = preg_split('/[\/]/', $q);
 
         // get format (part of last argument after . i.e view.json)
         $lastarg = sizeof($args) - 1;
-        $lastarg_split = preg_split('/[.]/', $args[$lastarg]);
+        $lastarg_split = preg_split('/[_]/', $args[$lastarg]);
         if (count($lastarg_split) > 1) { $this->format = $lastarg_split[1]; }
         $args[$lastarg] = $lastarg_split[0];
 

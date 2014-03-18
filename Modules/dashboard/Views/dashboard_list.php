@@ -18,7 +18,7 @@ input[type="text"] {
     <div id="nodashboards" class="alert alert-block hide">
       <h4 class="alert-heading"><?php echo _('No dashboards created'); ?></h4>
       <p><?php echo _('Maybe you would like to add your first dashboard using the button') ?> 
-      <a href="#" onclick="$.ajax({type: 'POST',url:'<?php echo $path; ?>dashboard/create.json',success: function(){update();} });"><i class="icon-plus-sign"></i></a>
+      <a href="#" onclick="$.ajax({type: 'POST',url:'<?php echo $path; ?>dashboard/create_json',success: function(){update();} });"><i class="icon-plus-sign"></i></a>
     </div>
 
 </div>
@@ -56,7 +56,7 @@ input[type="text"] {
     'published':{'title':"<?php echo _('Published'); ?>", 'type':"icon", 'trueicon':"icon-ok", 'falseicon':"icon-remove"},
 
     // Actions
-    'clone-action':{'title':'', 'type':"iconlink", 'icon':"icon-random", 'link':path+"dashboard/clone.json?id="},
+    'clone-action':{'title':'', 'type':"iconlink", 'icon':"icon-random", 'link':path+"dashboard/clone_json?id="},
 
     'edit-action':{'title':'', 'type':"edit"},
     'delete-action':{'title':'', 'type':"delete"},

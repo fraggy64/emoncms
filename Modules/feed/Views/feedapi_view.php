@@ -34,24 +34,24 @@
 
 <h3><?php echo _("JSON");?></h3>
 <p><?php echo _("To use the json api the request url needs to include .json");?></p>
-<p><a href="<?php echo $path; ?>feed/list.json?userid=0"><?php echo $path; ?>feed/list.json?userid=0</a> - <?php echo _("returns a list of public feeds made public by the given user.");?></p>
-<p><a href="<?php echo $path; ?>feed/value.json?id=0"><?php echo $path; ?>feed/value.json?id=0</a> - <?php echo _("returns the present value of a given feed");?></p>
-<p><a href="<?php echo $path; ?>feed/get.json?id=0&field="><?php echo $path; ?>feed/get.json?id=0&field=</a> - <?php echo _("returns the present value of a given feed");?></p>
-<p><a href="<?php echo $path; ?>feed/data.json?id=0&start=&end=&dp="><?php echo $path; ?>feed/data.json?id=0&start=&end=&dp=</a> - <?php echo _("returns feed data");?></p>
-<p><a href="<?php echo $path; ?>feed/histogram.json?id=0&start=&end="><?php echo $path; ?>feed/histogram.json?id=0&start=&end=</a> - <?php echo _("returns histogram data");?></p>
-<p><a href="<?php echo $path; ?>feed/kwhatpower.json?id=0&min=&max="><?php echo $path; ?>feed/kwhatpower.json?id=0&min=&max=</a> - <?php echo _("returns kwh consumed in a given power band using histogram data type");?></p>
+<p><a href="<?php echo $path; ?>feed/list_json?userid=0"><?php echo $path; ?>feed/list_json?userid=0</a> - <?php echo _("returns a list of public feeds made public by the given user.");?></p>
+<p><a href="<?php echo $path; ?>feed/value_json?id=0"><?php echo $path; ?>feed/value_json?id=0</a> - <?php echo _("returns the present value of a given feed");?></p>
+<p><a href="<?php echo $path; ?>feed/get_json?id=0&field="><?php echo $path; ?>feed/get_json?id=0&field=</a> - <?php echo _("returns the present value of a given feed");?></p>
+<p><a href="<?php echo $path; ?>feed/data_json?id=0&start=&end=&dp="><?php echo $path; ?>feed/data_json?id=0&start=&end=&dp=</a> - <?php echo _("returns feed data");?></p>
+<p><a href="<?php echo $path; ?>feed/histogram_json?id=0&start=&end="><?php echo $path; ?>feed/histogram_json?id=0&start=&end=</a> - <?php echo _("returns histogram data");?></p>
+<p><a href="<?php echo $path; ?>feed/kwhatpower_json?id=0&min=&max="><?php echo $path; ?>feed/kwhatpower_json?id=0&min=&max=</a> - <?php echo _("returns kwh consumed in a given power band using histogram data type");?></p>
 
-<p><a href="<?php echo $path; ?>feed/getid.json?name="><?php echo $path; ?>feed/getid.json?name=</a> - <?php echo _("returns id of a feed given by name");?></p>
-<p><a href="<?php echo $path; ?>feed/list.json"><?php echo $path; ?>feed/list.json</a></p>
+<p><a href="<?php echo $path; ?>feed/getid_json?name="><?php echo $path; ?>feed/getid_json?name=</a> - <?php echo _("returns id of a feed given by name");?></p>
+<p><a href="<?php echo $path; ?>feed/list_json"><?php echo $path; ?>feed/list_json</a></p>
 
-<p><a href="<?php echo $path; ?>feed/create.json?name=&type="><?php echo $path; ?>feed/create.json?name=&type=</a></p>
-<p><a href="<?php echo $path; ?>feed/emptybin.json"><?php echo $path; ?>feed/emptybin.json</a></p>
+<p><a href="<?php echo $path; ?>feed/create_json?name=&type="><?php echo $path; ?>feed/create_json?name=&type=</a></p>
+<p><a href="<?php echo $path; ?>feed/emptybin_json"><?php echo $path; ?>feed/emptybin_json</a></p>
 
-<p><a href="<?php echo $path; ?>feed/set.json?id=0&fields={'name':'anewname'}"><?php echo $path; ?>feed/set.json?id=0&fields={'name':'anewname'}</a></p>
-<p><a href="<?php echo $path; ?>feed/insert.json?id=0&time=UNIXTIME&value=100.0"><?php echo $path; ?>feed/insert.json?id=0&time=UNIXTIME&value=100.0</a></p>
-<p><a href="<?php echo $path; ?>feed/update.json?id=0&time=UNIXTIME&value=100.0"><?php echo $path; ?>feed/update.json?id=0&time=UNIXTIME&value=100.0</a></p>
-<p><a href="<?php echo $path; ?>feed/deletedatapoint.json?id=0&feedtime=UNIXTIME"><?php echo $path; ?>feed/deletedatapoint.json?id=0&feedtime=UNIXTIME</a></p>
-<p><a href="<?php echo $path; ?>feed/delete.json?id=0"><?php echo $path; ?>feed/delete.json?id=0</a></p>
-<p><a href="<?php echo $path; ?>feed/restore.json?id=0"><?php echo $path; ?>feed/restore.json?id=0</a></p>
-<p><a href="<?php echo $path; ?>feed/export.json?id=0&start=UNIXTIME"><?php echo $path; ?>feed/export.json?id=0&start=UNIXTIME</a></p>
+<p><a href="<?php echo $path; ?>feed/set_json?id=0&fields={'name':'anewname'}"><?php echo $path; ?>feed/set_json?id=0&fields={'name':'anewname'}</a></p>
+<p><a href="<?php echo $path; ?>feed/insert_json?id=0&time=UNIXTIME&value=100.0"><?php echo $path; ?>feed/insert_json?id=0&time=UNIXTIME&value=100.0</a></p>
+<p><a href="<?php echo $path; ?>feed/update_json?id=0&time=UNIXTIME&value=100.0"><?php echo $path; ?>feed/update_json?id=0&time=UNIXTIME&value=100.0</a></p>
+<p><a href="<?php echo $path; ?>feed/deletedatapoint_json?id=0&feedtime=UNIXTIME"><?php echo $path; ?>feed/deletedatapoint_json?id=0&feedtime=UNIXTIME</a></p>
+<p><a href="<?php echo $path; ?>feed/delete_json?id=0"><?php echo $path; ?>feed/delete_json?id=0</a></p>
+<p><a href="<?php echo $path; ?>feed/restore_json?id=0"><?php echo $path; ?>feed/restore_json?id=0</a></p>
+<p><a href="<?php echo $path; ?>feed/export_json?id=0&start=UNIXTIME"><?php echo $path; ?>feed/export_json?id=0&start=UNIXTIME</a></p>
 

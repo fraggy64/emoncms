@@ -133,7 +133,7 @@
     var newvalue = $("#newvalue").val();
     
     $.ajax({                                      
-      url: path+'feed/update.json',                         
+      url: path+'feed/update_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&time="+time+"&value="+newvalue,
       dataType: 'json',
       async: false,                      
@@ -147,7 +147,7 @@
     var multiplyvalue = $("#multiplyvalue").val();
     
     $.ajax({                                      
-      url: path+'feed/scalerange.json',                         
+      url: path+'feed/scalerange_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&start="+start+"&end="+end+"&value="+multiplyvalue,
       dataType: 'json',
       async: false,                      
@@ -163,7 +163,7 @@
   $("#confirmdelete").click(function()
   {
     $.ajax({                                      
-      url: path+'feed/deletedatarange.json',                         
+      url: path+'feed/deletedatarange_json',                         
       data: "&apikey="+apikey+"&id="+feedid+"&start="+start+"&end="+end,
       dataType: 'json',
       async: false,                      

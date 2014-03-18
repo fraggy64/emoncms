@@ -131,7 +131,7 @@ function languagecodetotext()
       if (username!=list.data.username)
       {
         $.ajax({
-          url: path+"user/changeusername.json",
+          url: path+"user/changeusername_json",
           data: "&username="+username,
           dataType: 'json',
           success: function(result)
@@ -178,7 +178,7 @@ function languagecodetotext()
       if (email!=list.data.email)
       {
         $.ajax({
-          url: path+"user/changeemail.json",
+          url: path+"user/changeemail_json",
           data: "&email="+email,
           dataType: 'json',
           success: function(result)
@@ -227,7 +227,7 @@ function languagecodetotext()
       else
       {
         $.ajax({
-          url: path+"user/changepassword.json",
+          url: path+"user/changepassword_json",
           data: "old="+oldpassword+"&new="+newpassword,
           dataType: 'json',
           success: function(result)

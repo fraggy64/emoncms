@@ -123,7 +123,7 @@ input[type="text"] {
   });
   
   $("#refreshfeedsize").click(function(){
-    $.ajax({ url: path+"feed/updatesize.json", success: function(data){update();} });
+    $.ajax({ url: path+"feed/updatesize_json", success: function(data){update();} });
   });
 
 </script>
